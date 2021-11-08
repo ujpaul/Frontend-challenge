@@ -1,0 +1,38 @@
+$primarycolor: #ff5d27;
+$color: #fff;
+$bordercolor: #e1e1e1;
+@mixin border() {
+  border: 1px $bordercolor solid;
+}
+body {
+  padding-top: 50px;
+}
+.container {
+  @include border();
+  width: 300px;
+  height: 70vh;
+  background-color: $color;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 0 auto;
+  img {
+    margin: 30px 20px 30px 20px;
+    width: 260px;
+  }
+}
+.btn-container {
+  width: 100%;
+}
+.home-btn {
+  background-color: $primarycolor;
+  color: $color;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 2px;
+  border: 1px $primarycolor solid;
+  width: 85%;
+  height: 50px;
+  margin: 0 20px 20px 20px;
+  cursor: pointer;
+}

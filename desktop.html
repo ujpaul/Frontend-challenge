@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Challenge</title>
+    <!-- <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    /> -->
+     <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./desktop/styles.css" />
+  </head>
+  <body>
+    <!-- <div class="flex-between contents">
+      <div>
+        <img src="./assets/logo.png" class="logo" />
+      </div>
+      <div class="menu">
+        Menu<span class="light-icon"><i class="fa fa-bars"></i></span>
+      </div>
+    </div> -->
+    <section class="header1">
+        <div class="header-div1">
+          <img src="./images/logo.png" alt="Logo" width="120" height="40" />
+        </div>
+        <div class="header-div2">
+         <span>Menu</span>
+         <img src="./images/humburger.png" alt="Logo" width="50" height="40" />
+          
+        </div>
+      </section>
+
+<div class="sec-header">
+   <div class="first">
+      <!-- <img src="./images/logo1.PNG" alt=""> -->
+      <div class="svg-container">         
+         <div>
+                     <svg class="big-x" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="app_big_text app_redOneColor_text" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 18.5A6.48 6.48 0 019.24 15H15l1-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15l1-2H9.24A6.491 6.491 0 0115 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3A8.955 8.955 0 0015 3c-3.92 0-7.24 2.51-8.48 6H3l-1 2h4.06a8.262 8.262 0 000 2H3l-1 2h4.52c1.24 3.49 4.56 6 8.48 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57z"></path></svg>
+
+         </div>
+         <p>x</p>
+         <div class="svg-div">
+            <label class="km100 km100-size">100</label>
+            <label class="km km100-size">KM</label>
+         </div>
+      </div>
+      <div><p>I costi chilometrici relativi alle auto
+          provate dal 2016<br/> ad oggi.<label>Piu informazioni</label>
+          </p></div>
+          <div class="sec-header">
+             <img src="./images/img1.PNG" alt="" class="img">
+             <span>Prezzi agiornati al 08/08/2021</span>
+          </div>
+   </div>
+   <div class="second">
+      <div style="width: 60%;margin-left: 20%;">
+         <p>COSTI CALCOLATI SU QUESTE PERCENTUALI DU UTILIZZO</p>
+      <section class="percentage">
+        <div class="division">
+          <div class="flex1">
+            <span class="flex-percentage">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text1">citta</span>
+          </div>
+          <div class="flex2">
+            <span class="flex-percentage">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text1">statale</span>
+          </div>
+          <div class="flex3">
+            <span class="flex-percentage">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text3">autostrada</span>
+          </div>
+        </div>
+        <div class="scale">
+          <div class="div1"></div>
+          <div class="div2"></div>
+          <div class="div3"></div>
+        </div>
+        <button class="btn-percentuali">Cambia Percentuali</button>
+      </section>
+      </div>
+      
+   </div>
+   <div class="third"></div>
+</div>
+    <!-- main section -->
+    <div class="main">
+      <div class="flex-between m-top-16">
+        <div class="filter-mgn">
+          <img src="./images/filter.jpg" alt="" width="25" height="20">
+          <strong class="strong">Filtra auto</strong>
+        </div>
+        <div>
+          Ordina per &nbsp; &nbsp;
+          <span class="round-span mr-16 first-span">
+            <b>Costo</b>
+          </span>
+          <span class="round-span mr-16"> Potenza</span>
+          <span class="round-span mr-16"> Cilindrata</span>
+          <span class="round-span mtop m-bottom"> Marca</span>
+        </div>
+        
+      </div>
+      <div class="sidebar-says m-top-16">
+        <div class="sidebar">
+          <div class="detail flex-between">
+            <div class="items flex-between">
+              <strong>Fascia di costo 100 km</strong>
+              <span class="light-icon"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <img src="./assets/canva1.png" />
+          </div>
+          <div class="detail ptop border-top m-top-16">
+            <div class="items flex-between">
+              <strong class="mgn">ALIMENTAZIONE</strong>
+              <span class="light-icon"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="items">
+              <div><input type="radio" /></div>
+              <div>Tutte</div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Tutte Benzina <label class="red"> (123)</label></div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Gasolio <label class="light">(71)</label></div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Mild Hybrid Benzina <label class="green">(21)</label></div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Mild Hybrid Diesel <label class="green">(5)</label></div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Full Hybrid <label class="green">(15)</label></div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Plug-in Hybrid (34)</div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Elettrica (34)</div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>GPL (6)</div>
+            </div>
+            <div class="items">
+              <div><input type="checkbox" /></div>
+              <div>Metano (6)</div>
+            </div>
+          </div>
+          <div class="detail ptop border-top m-top-16">
+            <div class="items flex-between">
+              <strong class="mgn">Tipo Auto</strong>
+              <span class="light-icon"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="flex-between">
+              <div>
+                <div class="items">
+                  <div><input type="radio" /></div>
+                  <div>Tutte</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>City Car</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Berlina</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Cabrio</div>
+                </div>
+              </div>
+              <div class="m-right">
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Coupe</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Station Wagon</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Monovolume</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Suv/Fuoristrada</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail ptop border-top m-top-16">
+            <div class="items flex-between">
+              <strong class="mgn">MARCA</strong>
+              <span class="light-icon"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="flex-between">
+              <div>
+                <div class="items">
+                  <div><input type="radio" checked /></div>
+                  <div>Tutte</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Alfa Romeo</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Alpine</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Alpine</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Aston Martin</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Audi</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Bmw</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Citroen</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Cupra</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Dacia</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Ds</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Dr</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Fiat</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Ford</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Honda</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Hyundai</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Jaguar</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Jeep</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Kia</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Lancia</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Land Rover</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Lexus</div>
+                </div>
+              </div>
+              <div class="m-right">
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mahindra</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mazda</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mercedes</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mg</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mini</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Mitsubishi</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Nissan</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Opel</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Peugeot</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Porche</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Renault</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Seat</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Skoda</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Ssangyong</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Subaru</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Suzuki</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Toyota</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Tesla</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Volkswagen</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Volvo</div>
+                </div>
+                <div class="items">
+                  <div><input type="checkbox" /></div>
+                  <div>Xev</div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom"></div>
+          </div>
+          <div></div>
+        </div>
+        <div class="car-container">
+           <div class="line-top"></div>
+          <div class="car-item">
+            <div>
+              <img src="./images/vw1.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+              <div class="car-description">
+                <h3 class="h3">VOLKSWAGEN ECO UP!</h3>
+                <span class="cars-section-p">move 5p.</span>
+              </div>
+              <span class="cars-section-p">porte</span>
+              <div class="cars-flex">
+                <div style="margin-left: 10px">
+                  <span>Tipo:<b> Berlina</b></span
+                  ><br />
+                  <span>Potenza:<b> 150</b>CV | <b>110</b>KW</span><br />
+                  <span>Cilindrata:<b> 1395</b> cm<sup>3</sup></span
+                  ><br />
+                </div>
+                <div>
+                  <div class="cars-btn">GPL</div>
+                </div>
+              </div>
+              <p class="nbr-color">3,85 <small>&euro;x100km per le tue abitudini &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i></p>
+              <div class="cars-rating">
+                <div class="cars-rating-div">
+                  <div class="div-inside1"></div>
+                </div>
+                <div class="cars-rating-div">
+                  <div class="div-inside11"></div>
+                </div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- single car -->
+          <div class="car-item">
+            <div>
+              <img src="./images/vw2.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+              <div class="car-description">
+                <h3 class="h3 car-desc-mgn">FORD FIESTA</h3>
+                <span class="cars-section-p span-mgn">1.1 75 CV Gpl 5</span>
+              </div>
+              <span class="cars-section-p">porte</span>
+              <div class="cars-flex">
+                <div style="margin-left: 10px">
+                  <span class="span-desc">Tipo:<b> Berlina</b></span
+                  ><br />
+                  <span class="span-desc">Potenza:<b> 150</b>CV | <b>110</b>KW</span><br />
+                  <span class="span-desc">Cilindrata:<b> 1395</b> cm<sup>3</sup></span
+                  ><br />
+                </div>
+                <div>
+                  <div class="cars-btn">GPL</div>
+                </div>
+              </div>
+              <div class="ford-speed">
+          <p class="nbr-color">4,96 <small>&euro;x100km</small></p>
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </div>
+              <div class="cars-rating">
+                <div class="cars-rating-div">
+                  <div class="div-inside1"></div>
+                </div>
+                <div class="cars-rating-div">
+                  <div class="div-inside11"></div>
+                </div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+                <div class="cars-rating-div"></div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- single car end -->
+          <!-- single car -->
+          <div class="car-item">
+            <div>
+              <img src="./images/iconic.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+              <span class="ford-text">HYUNDAY IONIC</span><span class="ford-text1"> ELECTRIC</span><br/>
+        <span class="cars-section-p">EV 38.3 kmh</span>
+        <div class="cars-flex">
+          <div class="mgn-left">
+            <span class="span-desc">Tipo:<b> Berlina</b></span
+            ><br />
+            <span class="span-desc">Potenza:<b> 150</b>CV | <b>110</b>KW</span
+            ><br />
+          </div>
+          <div>
+            <div class="cars-btn1">ELECTRICA</div>
+          </div>
+        </div>
+        <p class="nbr-color1">3,40 <small>&euro;x100km - ricarca domestica &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+           <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="div-inside2"></div>
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+        <p class="nbr-color2">8,54 <small>&euro;x100km - col. cor. continue &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+           <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="div-inside3"></div>
+            </div>
+            <div class="cars-rating-div">
+              <div class="div-inside4"></div>
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- single car end -->
+          <!-- single car -->
+          <div class="car-item">
+            <div>
+              <img src="./images/toyota.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+               <span class="ford-text">TOYOTA PRIUS</span><span class="ford-text1"> Plug-in hybrid</span><br/>
+        <!-- <span class="cars-section-p">Hybrid</span> -->
+        <div class="cars-flex">
+          <div class="mgn-left">
+            <span class="span-desc">Tipo:<b> Berlina</b></span
+            ><br />
+            <span class="span-desc">Potenza:<b> 150</strong>CV | <b>110</b>KW</span
+            ><br />
+            <span class="span-desc">Cilindrata: <b>1395</b> cm<sup>3</sup></span>
+          </div>
+          <div>
+            <div class="toyota-btn btn-font-size">Plug-in Hybrid</div>
+          </div>
+        </div>
+        <p class="toyota-nbr-color1">6,97 <small>&euro;x100km - ricarca domestica &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+           <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="div-inside-toyota1"></div>
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+        <p class="nbr-color2">8,54 <small>&euro;x100km - col. cor. continue &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+           <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="div-inside-toyota21"></div>
+            </div>
+            <div class="cars-rating-div">
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- single car end -->
+          <!-- single car -->
+          <div class="car-item">
+            <div>
+              <img src="./images/toyota1.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+              <div class="car-description">
+                <h3 class="h3 vw-size">VOLKSWAGEN ECO UP!</h3>
+                <span class="cars-section-span">move 5p.</span>
+              </div>
+        <div class="cars-flex">
+          <div class="mgn-left">
+            <span class="span-desc">Tipo:<b> Berlina</b></span
+            ><br />
+            <span class="span-desc">Potenza:<b> 150</strong>CV | <b>110</b>KW</span
+            ><br />
+            <span class="span-desc">Cilindrata: <b>1395</b> cm<sup>3</sup></span>
+          </div>
+          <div>
+            <div class="toyota-btn btn-font-size">FULL HYBRID</div>
+          </div>
+        </div>
+        <div class="ford-speed">
+          <p class="toyota-nbr-color1">6,97 <small>&euro;x100km</small></p>
+          <i class="fa fa-info-circle" style="font-size: 20px; color: #676767;" aria-hidden="true"></i>
+        </div>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="div-inside-toyota1"></div>
+            </div>
+            <div class="cars-rating-div">
+              <div class="full-hybrid-inside-div"></div>
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- single car end -->
+          <!-- single car -->
+          <div class="car-item">
+            <div>
+              <img src="./images/benzina.PNG" class="car-img" />
+            </div>
+            <div class="flex">
+              <span class="ford-text">TOYOTA AYGO</span><span class="ford-text1"> 1.0 VVT-i 72</span><br/>
+        <span class="cars-section-p">CV 5P.</span>
+        <div class="cars-flex">
+          <div  class="mgn-left">
+            <span class="span-desc">Tipo:<b> Berlina</b></span
+            ><br />
+            <span class="span-desc">Potenza:<b> 150</b>CV | <b>110</b>KW</span
+            ><br />
+            <span class="span-desc">Cilindrata: <b>1395</b> cm<sup>3</sup></span>
+          </div>
+          <div>
+            <div class="aygo-btn btn-font-size">BENZINA</div>
+          </div>
+        </div>
+        <div class="ford-speed">
+          <p class="nbr-color-aygo">7,96 <small>&euro;x100km</small></p>
+          <i class="fa fa-info-circle" style="font-size: 20px; color: #676767;" aria-hidden="true"></i>
+        </div>
+          <div class="cars-rating">
+            <div class="cars-rating-div">
+              <div class="aygo-inside-div1"></div>
+            </div>
+            <div class="cars-rating-div">
+            </div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+            <div class="cars-rating-div"></div>
+          </div>
+            </div>
+            
+          </div>
+          <button class="btn-carica btn-font-size">CARICA ALTRE AUTO</button>
+          <!-- single car end -->
+          
+        </div>
+      </div>
+      
+      <!-- <div class="main"></div> -->
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="flex-between">
+        <div>
+          <span class="m-right">QUATTRORUOTE</span
+          ><span>Sitemap | Contatti | Redazione</span>Sitemap | Contatti |
+          Redazione
+        </div>
+        <div class="footer-flex">
+          <div><img src="./images/youtube.svg" alt=""></div>
+          <div><img src="./images/facebook.svg" alt=""></div>
+          <div><img src="./images/twitter.svg" alt=""></div>
+          <div><img src="./images/instagram.svg" alt=""></div>
+          <span class="fa fa-rss"></span>
+        </div>
+      </div>
+      <hr />
+      <div>
+        Editoriale Domus SpA Via G. Mazzocchi, 1/3 20089 Rozzano (Mi) - Codice
+        fiscale, partita IVA e iscrizione al Registro delle Imprese di Milano n.
+        07835550158 R.E.A. di Milano n. 1186124 - Capitale sociale versato €
+        5.000.000,00 - Tutti i diritti riservati - All rights reserved -
+        Informativa Privacy - Informativa Cookie completa - Lic. SIAE n.
+        4653/I/908
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-box">
+        <div class="modal-header">
+          <img class="quit img-close" src="./images/close.PNG" alt="">
+        </div>
+        <div class="modal-text">
+           <h3>Dove usi l'auto?</h3>
+          <p>Utiliza i <label>cursori</label> per modificale le parcentuali relative al tipo di percorso che<br>
+            fai abitualmente, una volta impostati i valori clicca su <label>Ricalcola</label>
+          </p>
+        </div>
+        <div class="modal-container">
+           <section class="percentage">
+               <div class=" scale-modal">
+          <div class="div1">
+             <img class="direction" src="./images/direction.png" alt="" width="30" height="30">
+          </div>
+          <div class="div2">
+             <img src="./images/direction.png" alt="" width="30" height="30">
+          </div>
+          <div class="div3"></div>
+        </div>
+        <div class="division">
+          <div class="flex1">
+             
+            <span class="flex-percentage-modal">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text1">citta</span>
+          </div>
+          <div class="flex2">
+            <span class="flex-percentage">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text1">statale</span>
+          </div>
+          <div class="flex3">
+            <span class="flex-percentage">33</span><span><small>%</small></span>
+            <span class="flex-text flex-text3">autostrada</span>
+          </div>
+        </div>
+        
+        <button class="btn-percentuali modal-btn">Ricalcola</button>
+      </section>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".btn-percentuali").on("click", () => {
+        $(".modal").css({ display: "block" });
+      });
+      $(".quit").on("click", () => {
+        $(".modal").css({ display: "none" });
+      });
+    </script>
+  </body>
+</html>
